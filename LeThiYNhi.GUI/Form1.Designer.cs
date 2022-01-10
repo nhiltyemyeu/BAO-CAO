@@ -34,7 +34,6 @@ namespace LeThiYNhi.GUI
             this.label5 = new System.Windows.Forms.Label();
             this.tbNs = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btAdd = new System.Windows.Forms.Button();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,15 +94,6 @@ namespace LeThiYNhi.GUI
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 59;
             this.label4.Text = "Nơi sinh";
-            // 
-            // btAdd
-            // 
-            this.btAdd.Location = new System.Drawing.Point(208, 335);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(75, 23);
-            this.btAdd.TabIndex = 63;
-            this.btAdd.Text = "Ghi";
-            this.btAdd.UseVisualStyleBackColor = true;
             // 
             // Column4
             // 
@@ -198,7 +188,7 @@ namespace LeThiYNhi.GUI
             // 
             // btNew
             // 
-            this.btNew.Location = new System.Drawing.Point(102, 335);
+            this.btNew.Location = new System.Drawing.Point(208, 335);
             this.btNew.Name = "btNew";
             this.btNew.Size = new System.Drawing.Size(75, 23);
             this.btNew.TabIndex = 53;
@@ -255,7 +245,6 @@ namespace LeThiYNhi.GUI
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbNs);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btAdd);
             this.Controls.Add(this.dt);
             this.Controls.Add(this.dgvEm);
             this.Controls.Add(this.cbDv);
@@ -283,7 +272,6 @@ namespace LeThiYNhi.GUI
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbNs;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
