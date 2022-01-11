@@ -136,7 +136,6 @@ namespace LeThiYNhi.GUI
             tbName.Text = dgvEm.Rows[idx].Cells[1].Value.ToString();
             dt.Text = dgvEm.Rows[idx].Cells[2].Value.ToString();
             ckbGt.Text = dgvEm.Rows[idx].Cells[3].Value.ToString();
-
             tbNs.Text = dgvEm.Rows[idx].Cells[4].Value.ToString();
             cbDv.Text = dgvEm.Rows[idx].Cells[5].Value.ToString();
         }
