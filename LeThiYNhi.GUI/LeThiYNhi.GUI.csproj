@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeThiYNhi.BLL\LeThiYNhi.BLL.csproj">
+      <Project>{5B4D0F50-B4C7-4A4C-8AF6-99B19DB2E19D}</Project>
+      <Name>LeThiYNhi.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeThiYNhi.DTO\LeThiYNhi.DTO.csproj">
+      <Project>{E721643C-7D20-43C4-A2BC-E6B9765EB634}</Project>
+      <Name>LeThiYNhi.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

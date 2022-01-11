@@ -1,30 +1,29 @@
 CREATE DATABASE HR
-CREATE TABLE Department
+CREATE TABLE Department_2119110224
 (
 id nvarchar(10),
 name nvarchar(255)
 )
-CREATE TABLE Employee
+CREATE TABLE Employee_2119110224
 (
 idemploy nvarchar(255),
 name nvarchar(255),
 datebirth nvarchar(255),
 gender bit,
-playbirth nvarchar(255),
+placebirth nvarchar(255),
 iddepart nvarchar(10))
 
-INSERT INTO Department VALUES ('IT', N'Cong nghe thong tin')
-INSERT INTO Department VALUES ('KT', N'Ke toan')
-INSERT INTO Department VALUES ('KSNB', N'Kiem soat noi bo')
+INSERT INTO Department_2119110224 VALUES ('IT', N'Cong nghe thong tin')
+INSERT INTO Department_2119110224 VALUES ('KT', N'Ke toan')
+INSERT INTO Department_2119110224 VALUES ('KSNB', N'Kiem soat noi bo')
 
-INSERT INTO Employee VALUES (N'C53418', 'Tran Tien','11/10/2000', 1, 'Ha Noi','IT')
-INSERT INTO Employee VALUES (N'X53416', 'Nguyen Cuong', '21/07/1999',	0,	'Dak Lak','KT')
-INSERT INTO Employee VALUES (N'M53417', 'Nguyen Hao ', '25/12/2001',	1,	'TP Ho Chi Minh','KSNB')
-delete from Employee
-drop table Department
-drop table Employee
-drop proc GetDepartment
-drop proc GetEmployee
+INSERT INTO Employee_2119110224 VALUES (N'C53418', 'Tran Tien','11/10/2000', 1, 'Ha Noi','IT')
+INSERT INTO Employee_2119110224 VALUES (N'X53416', 'Nguyen Cuong', '21/07/1999',	0,	'Dak Lak','KT')
+INSERT INTO Employee_2119110224 VALUES (N'M53417', 'Nguyen Hao ', '25/12/2001',	1,	'TP Ho Chi Minh','KSNB')
+delete from Employee_2119110224
+drop table Department_2119110224
+drop table Employee_2119110224
+
 
 
 
@@ -32,7 +31,7 @@ drop proc GetEmployee
 Create Proc GetDepartment
 as
 begin
-     select * from Department
+     select * from Department_2119110224
 end
 go
 
@@ -44,7 +43,7 @@ EXEC GetDepartment
 Create Proc GetEmployee
 as
 begin
-     select * from Employee
+     select * from Employee_2119110224
 end
 go
 

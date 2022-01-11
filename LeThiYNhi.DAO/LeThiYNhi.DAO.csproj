@@ -43,8 +43,15 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Employee\DBConnection.cs" />
+    <Compile Include="Employee\DepartmentDAO.cs" />
     <Compile Include="Employee\EmployeeDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeThiYNhi.DTO\LeThiYNhi.DTO.csproj">
+      <Project>{E721643C-7D20-43C4-A2BC-E6B9765EB634}</Project>
+      <Name>LeThiYNhi.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

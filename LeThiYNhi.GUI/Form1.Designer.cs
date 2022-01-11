@@ -123,7 +123,7 @@ namespace LeThiYNhi.GUI
             // dt
             // 
             this.dt.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dt.CustomFormat = "dd/mm/yyyy";
+            this.dt.CustomFormat = "dd/MM/yyyy";
             this.dt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dt.Location = new System.Drawing.Point(438, 40);
             this.dt.Name = "dt";
@@ -144,6 +144,7 @@ namespace LeThiYNhi.GUI
             this.dgvEm.Name = "dgvEm";
             this.dgvEm.Size = new System.Drawing.Size(619, 193);
             this.dgvEm.TabIndex = 58;
+            this.dgvEm.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEm_RowEnter);
             // 
             // playbirth
             // 
@@ -167,6 +168,7 @@ namespace LeThiYNhi.GUI
             this.btDelete.TabIndex = 56;
             this.btDelete.Text = "Xoá";
             this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btEdit
             // 
@@ -176,6 +178,7 @@ namespace LeThiYNhi.GUI
             this.btEdit.TabIndex = 55;
             this.btEdit.Text = "Sửa";
             this.btEdit.UseVisualStyleBackColor = true;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // btExit
             // 
@@ -185,6 +188,7 @@ namespace LeThiYNhi.GUI
             this.btExit.TabIndex = 54;
             this.btExit.Text = "Thoát";
             this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // btNew
             // 
@@ -194,6 +198,7 @@ namespace LeThiYNhi.GUI
             this.btNew.TabIndex = 53;
             this.btNew.Text = "Thêm";
             this.btNew.UseVisualStyleBackColor = true;
+            this.btNew.Click += new System.EventHandler(this.btNew_Click);
             // 
             // tbId
             // 
@@ -259,6 +264,7 @@ namespace LeThiYNhi.GUI
             this.Controls.Add(this.tbName);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

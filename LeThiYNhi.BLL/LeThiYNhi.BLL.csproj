@@ -42,8 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Employee\DepartmentBLL.cs" />
     <Compile Include="Employee\EmployeeBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeThiYNhi.DAO\LeThiYNhi.DAO.csproj">
+      <Project>{D4583236-E4EF-4B6E-8D23-9805AF302A76}</Project>
+      <Name>LeThiYNhi.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeThiYNhi.DTO\LeThiYNhi.DTO.csproj">
+      <Project>{E721643C-7D20-43C4-A2BC-E6B9765EB634}</Project>
+      <Name>LeThiYNhi.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
