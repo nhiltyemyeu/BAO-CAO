@@ -51,10 +51,14 @@ namespace LeThiYNhi.GUI
                 em.Date = dt.Text;
                 em.Placebirth = tbNs.Text;
                 em.Department = (DepartmentDTO)cbDv.SelectedItem;
-                em.Gender = ckbGt.Checked;
-                if (ckbGt.Checked)
+                em.Gender = ckbGt.Text;
+                if (ckbGt.Checked == true)
                 {
-                    em.Gender = true;
+                    em.Gender = "Giới tính Nam";
+                }
+                else
+                {
+                    em.Gender = "Giới tính Nữ";
                 }
                 emBLL.NewEmployee(em);
 
@@ -111,9 +115,13 @@ namespace LeThiYNhi.GUI
                 row.Cells[5].Value = em.DepartmentName;
 
 
-                if (ckbGt.Checked)
+                if (ckbGt.Checked == true)
                 {
-                    row.Cells[3].Value = true;
+                    row.Cells[3].Value = "Giới tính Nam";
+                }
+                else
+                {
+                    row.Cells[3].Value = "Giới tính Nữ";
                 }
                 MessageBox.Show("Đã sửa khách hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

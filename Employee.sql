@@ -9,17 +9,22 @@ CREATE TABLE Employee_2119110224
 idemploy nvarchar(255),
 name nvarchar(255),
 datebirth nvarchar(255),
-gender bit,
+gender nvarchar(255),
 placebirth nvarchar(255),
 iddepart nvarchar(10))
 
-INSERT INTO Department_2119110224 VALUES ('IT', N'Cong nghe thong tin')
-INSERT INTO Department_2119110224 VALUES ('KT', N'Ke toan')
-INSERT INTO Department_2119110224 VALUES ('KSNB', N'Kiem soat noi bo')
+INSERT INTO Department_2119110224 VALUES ('IT', N'Công ngh? thông tin')
+INSERT INTO Department_2119110224 VALUES ('KT', N'K? toán')
+INSERT INTO Department_2119110224 VALUES ('KSNB', N'Ki?m soát n?i b?')
 
-INSERT INTO Employee_2119110224 VALUES (N'C53418', 'Tran Tien','11/10/2000', 1, 'Ha Noi','IT')
-INSERT INTO Employee_2119110224 VALUES (N'X53416', 'Nguyen Cuong', '21/07/1999',	0,	'Dak Lak','KT')
-INSERT INTO Employee_2119110224 VALUES (N'M53417', 'Nguyen Hao ', '25/12/2001',	1,	'TP Ho Chi Minh','KSNB')
+INSERT INTO Employee_2119110224 VALUES (N'XYZ0104', N'Tr??ng V?n Ti?n', '01/04/2001',	N'Gi?i tính Nam',N'Qu?ng Bình','KSNB')
+INSERT INTO Employee_2119110224 VALUES (N'CCQ1911G', N'Lê Th? Ý Nhi','12/06/2001', N'Gi?i tính N?', N'Qu?ng Bình','IT')
+INSERT INTO Employee_2119110224 VALUES (N'CCQ1911G', N'Nguy?n Th? Linh', '12/06/2001',N'Gi?i tính N?',N'??ng Nai','IT')
+INSERT INTO Employee_2119110224 VALUES (N'ABC1706', N'Tr??ng Quang Nam', '17/06/2001',	N'Gi?i tính Nam',N'Qu?ng Bình','KT')
+INSERT INTO Employee_2119110224 VALUES (N'CC1911H', N'Nguy?n H?ng Phúc', '30/01/2001',	N'Gi?i tính Nam',N'??ng Nai','IT')
+INSERT INTO Employee_2119110224 VALUES (N'CC1911H', N'Nguy?n Thuý Thanh', '30/09/2001',N'Gi?i tính N?',N'Long An','IT')
+
+
 delete from Employee_2119110224
 drop table Department_2119110224
 drop table Employee_2119110224
@@ -49,11 +54,13 @@ go
 
 EXEC GetEmployee
 
+drop proc GetEmployee
+
 create proc InsertEmployee
 @idemploy nvarchar(255),
 @name nvarchar(255),
 @datebirth datetime,
-@gender int,
+@gender nvarchar(255),
 @playbirth nvarchar(255),
 @iddepart nvarchar(255)
 as
@@ -67,7 +74,7 @@ create proc UpdateEmployee
 @idemploy nvarchar(255),
 @name nvarchar(255),
 @datebirth datetime,
-@gender int,
+@gender nvarchar(255),
 @playbirth nvarchar(255),
 @iddepart nvarchar(255)
 as

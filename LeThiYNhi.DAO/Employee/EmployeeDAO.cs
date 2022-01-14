@@ -32,10 +32,10 @@ namespace LeThiYNhi.DAO.Employee
                 em.IdEm = reader["idemploy"].ToString();
                 em.Name = reader["name"].ToString();
                 em.Date = reader["datebirth"].ToString();
-                em.Gender = (bool)reader["gender"];
+                em.Gender = reader["gender"].ToString();
                 em.Department = dep.ReadDep(reader["iddepart"].ToString());
                 em.Placebirth = reader["placebirth"].ToString();
-
+                
                 lstEm.Add(em);
             }
             conn.Close();
@@ -61,7 +61,7 @@ namespace LeThiYNhi.DAO.Employee
                 cmd.Parameters.Add("@idemploy", SqlDbType.Int).Value = em.IdEm;
                 cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = em.Name;
                 cmd.Parameters.Add("@datebirth", SqlDbType.NVarChar).Value = em.Date;
-                cmd.Parameters.Add("@gender", SqlDbType.Bit).Value = em.Gender;
+                cmd.Parameters.Add("@gender", SqlDbType.NVarChar).Value = em.Gender;
                 cmd.Parameters.Add("@iddepart", SqlDbType.NVarChar).Value = em.Department.Id;
                 cmd.Parameters.Add("@placebirth", SqlDbType.NVarChar).Value = em.Placebirth;
 
@@ -106,6 +106,7 @@ namespace LeThiYNhi.DAO.Employee
                 cmd.Parameters.Add("@idemploy", SqlDbType.Int).Value = em.IdEm;
                 cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = em.Name;
                 cmd.Parameters.Add("@datebirth", SqlDbType.NVarChar).Value = em.Date;
+                cmd.Parameters.Add("@gender", SqlDbType.NVarChar).Value = em.Gender;
                 cmd.Parameters.Add("@iddepart", SqlDbType.Int).Value = em.Department.Id;
                 cmd.Parameters.Add("@placebirth", SqlDbType.NVarChar).Value = em.Placebirth;
 

@@ -63,7 +63,7 @@ namespace LeThiYNhi.GUI
             // ckbGt
             // 
             this.ckbGt.AutoSize = true;
-            this.ckbGt.Location = new System.Drawing.Point(561, 42);
+            this.ckbGt.Location = new System.Drawing.Point(582, 42);
             this.ckbGt.Name = "ckbGt";
             this.ckbGt.Size = new System.Drawing.Size(91, 17);
             this.ckbGt.TabIndex = 62;
@@ -73,7 +73,7 @@ namespace LeThiYNhi.GUI
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(378, 43);
+            this.label5.Location = new System.Drawing.Point(401, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 61;
@@ -81,7 +81,7 @@ namespace LeThiYNhi.GUI
             // 
             // tbNs
             // 
-            this.tbNs.Location = new System.Drawing.Point(237, 76);
+            this.tbNs.Location = new System.Drawing.Point(258, 76);
             this.tbNs.Name = "tbNs";
             this.tbNs.Size = new System.Drawing.Size(415, 20);
             this.tbNs.TabIndex = 60;
@@ -89,7 +89,7 @@ namespace LeThiYNhi.GUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(186, 79);
+            this.label4.Location = new System.Drawing.Point(205, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 59;
@@ -125,7 +125,7 @@ namespace LeThiYNhi.GUI
             this.dt.Cursor = System.Windows.Forms.Cursors.Default;
             this.dt.CustomFormat = "dd/MM/yyyy";
             this.dt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt.Location = new System.Drawing.Point(438, 40);
+            this.dt.Location = new System.Drawing.Point(461, 39);
             this.dt.Name = "dt";
             this.dt.Size = new System.Drawing.Size(106, 20);
             this.dt.TabIndex = 64;
@@ -142,7 +142,7 @@ namespace LeThiYNhi.GUI
             this.Column6});
             this.dgvEm.Location = new System.Drawing.Point(33, 121);
             this.dgvEm.Name = "dgvEm";
-            this.dgvEm.Size = new System.Drawing.Size(619, 193);
+            this.dgvEm.Size = new System.Drawing.Size(640, 193);
             this.dgvEm.TabIndex = 58;
             this.dgvEm.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEm_RowEnter);
             // 
@@ -157,7 +157,7 @@ namespace LeThiYNhi.GUI
             this.cbDv.FormattingEnabled = true;
             this.cbDv.Location = new System.Drawing.Point(74, 76);
             this.cbDv.Name = "cbDv";
-            this.cbDv.Size = new System.Drawing.Size(103, 21);
+            this.cbDv.Size = new System.Drawing.Size(125, 21);
             this.cbDv.TabIndex = 57;
             // 
             // btDelete
@@ -204,7 +204,7 @@ namespace LeThiYNhi.GUI
             // 
             this.tbId.Location = new System.Drawing.Point(75, 40);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(102, 20);
+            this.tbId.Size = new System.Drawing.Size(124, 20);
             this.tbId.TabIndex = 51;
             // 
             // label3
@@ -228,7 +228,7 @@ namespace LeThiYNhi.GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 43);
+            this.label1.Location = new System.Drawing.Point(33, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(22, 13);
             this.label1.TabIndex = 48;
@@ -236,7 +236,7 @@ namespace LeThiYNhi.GUI
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(237, 40);
+            this.tbName.Location = new System.Drawing.Point(258, 40);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(126, 20);
             this.tbName.TabIndex = 52;
@@ -245,7 +245,7 @@ namespace LeThiYNhi.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 399);
+            this.ClientSize = new System.Drawing.Size(700, 399);
             this.Controls.Add(this.ckbGt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbNs);
