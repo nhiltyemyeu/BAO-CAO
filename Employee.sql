@@ -25,9 +25,6 @@ INSERT INTO Employee_2119110224 VALUES (N'CC1911H', N'Nguy?n H?ng Phúc', '30/01/
 INSERT INTO Employee_2119110224 VALUES (N'CC1911H', N'Nguy?n Thuý Thanh', '30/09/2001',N'Gi?i tính N?',N'Long An','IT')
 
 
-delete from Employee_2119110224
-drop table Department_2119110224
-drop table Employee_2119110224
 
 
 

@@ -39,11 +39,14 @@ namespace LeThiYNhi.GUI
         private void btNew_Click(object sender, EventArgs e)
         {
             EmployeeDTO em = new EmployeeDTO();
-            if (tbId.Text.Length < 1)
+            if (tbId.Text.Length < 1 && tbName.Text == "" && tbNs.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập mã khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbId.Focus();
+                tbName.Focus();
+                tbNs.Focus();
             }
+          
             else
             {
                 em.IdEm = tbId.Text;
@@ -92,11 +95,12 @@ namespace LeThiYNhi.GUI
         private void btEdit_Click(object sender, EventArgs e)
         {
             EmployeeDTO em = new EmployeeDTO();
-            if (tbId.Text == "")
+            if (tbId.Text == "" && tbName.Text == "")
             {
-                MessageBox.Show("Vui lòng chọn khách hàng cần sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbId.Focus();
             }
+            
             else
             {
 

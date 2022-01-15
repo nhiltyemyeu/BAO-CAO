@@ -29,18 +29,12 @@ namespace LeThiYNhi.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ckbGt = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbNs = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dt = new System.Windows.Forms.DateTimePicker();
             this.dgvEm = new System.Windows.Forms.DataGridView();
-            this.playbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbDv = new System.Windows.Forms.ComboBox();
             this.btDelete = new System.Windows.Forms.Button();
             this.btEdit = new System.Windows.Forms.Button();
@@ -51,14 +45,14 @@ namespace LeThiYNhi.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.playbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEm)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "iddepart";
-            this.Column6.HeaderText = "Đơn vị";
-            this.Column6.Name = "Column6";
             // 
             // ckbGt
             // 
@@ -95,31 +89,6 @@ namespace LeThiYNhi.GUI
             this.label4.TabIndex = 59;
             this.label4.Text = "Nơi sinh";
             // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "gender";
-            this.Column4.HeaderText = "Giới tính";
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "datebirth";
-            this.Column3.HeaderText = "Ngày sinh";
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "name";
-            this.Column2.HeaderText = "Họ tên";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "idemploy";
-            this.Column1.HeaderText = "Mã";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 50;
-            // 
             // dt
             // 
             this.dt.Cursor = System.Windows.Forms.Cursors.Default;
@@ -145,12 +114,6 @@ namespace LeThiYNhi.GUI
             this.dgvEm.Size = new System.Drawing.Size(640, 193);
             this.dgvEm.TabIndex = 58;
             this.dgvEm.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEm_RowEnter);
-            // 
-            // playbirth
-            // 
-            this.playbirth.DataPropertyName = "placebirth";
-            this.playbirth.HeaderText = "Nơi sinh";
-            this.playbirth.Name = "playbirth";
             // 
             // cbDv
             // 
@@ -241,6 +204,44 @@ namespace LeThiYNhi.GUI
             this.tbName.Size = new System.Drawing.Size(126, 20);
             this.tbName.TabIndex = 52;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "idemploy";
+            this.Column1.HeaderText = "Mã";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "name";
+            this.Column2.HeaderText = "Họ tên";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "datebirth";
+            this.Column3.HeaderText = "Ngày sinh";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "gender";
+            this.Column4.HeaderText = "Giới tính";
+            this.Column4.Name = "Column4";
+            // 
+            // playbirth
+            // 
+            this.playbirth.DataPropertyName = "placebirth";
+            this.playbirth.HeaderText = "Nơi sinh";
+            this.playbirth.Name = "playbirth";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "iddepart";
+            this.Column6.HeaderText = "Đơn vị";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 150;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,19 +273,12 @@ namespace LeThiYNhi.GUI
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.CheckBox ckbGt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbNs;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DateTimePicker dt;
         private System.Windows.Forms.DataGridView dgvEm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn playbirth;
         private System.Windows.Forms.ComboBox cbDv;
         private System.Windows.Forms.Button btDelete;
         private System.Windows.Forms.Button btEdit;
@@ -295,6 +289,12 @@ namespace LeThiYNhi.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn playbirth;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
 
